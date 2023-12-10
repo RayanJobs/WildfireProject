@@ -10,12 +10,12 @@ import shutil
 import signal
 import subprocess
 import sys
-import cell2fire.utils.DataGeneratorC as DG
-import cell2fire.utils.ReadDataPrometheus as RDP
-from cell2fire.utils.ParseInputs import InitCells
-from cell2fire.utils.Stats import *
-from cell2fire.utils.Heuristics import *
-import cell2fire  # for path finding
+import WISE.utils.DataGeneratorC as DG
+import WISE.utils.ReadDataPrometheus as RDP
+from WISE.utils.ParseInputs import InitCells
+from WISE.utils.Stats import *
+from WISE.utils.Heuristics import *
+import WISE  # for path finding
 
 p = str(cell2fire.__path__)
 l = p.find("'")
