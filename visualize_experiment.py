@@ -12,7 +12,7 @@ from generator.helpers import IgnitionPoints, IgnitionPoint
 if __name__ == "__main__":
     logging.basicConfig(level=logging.DEBUG)
 
-    trained_model = PPO.load("../vectorize_model_2022-04-11_22-36-35/ppo_final.zip")
+    trained_model = PPO.load("../vectorize_model_2023-05-11/ppo_final.zip")
     evaluation_env = FireEnv(ignition_points=IgnitionPoints([IgnitionPoint(1100, 1)]))
     observation = evaluation_env.reset()
     video_recorder = VideoRecorder(evaluation_env, "ppo_vid.mp4", enabled=True)
